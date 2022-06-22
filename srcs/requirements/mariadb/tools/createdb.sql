@@ -1,0 +1,9 @@
+CREATE DATABASE wordpress;
+
+CREATE USER 'wroyal'@'%' IDENTIFIED BY '123123';
+
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wroyal'@'%';
+
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'root123123';
